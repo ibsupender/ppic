@@ -246,7 +246,7 @@ if ( ! function_exists( 'education_lms_course_students' ) ) {
 
 if ( ! function_exists( 'education_lms_get_setting' ) ) {
 	function education_lms_get_setting( $setting_name ) {
-
+    return;
 		if ( ! is_plugin_active( 'learnpress/learnpress.php' ) ) {
 			return '';
 		}
