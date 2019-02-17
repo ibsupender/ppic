@@ -674,30 +674,29 @@ a:hover, a:active {
   float: left;
   position: relative;
   padding: 0;
-  margin-top: 8px;
   z-index: 20;
 }
 .main-navigation li:last-child a {
   padding-right: 0;
 }
 .main-navigation a {
-  display: block;
-  text-decoration: none;
-  padding: 15px 15px 40px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  color: #404040;
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px 15px;
+    /* text-transform: uppercase; */
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #fff;
 }
 .main-navigation a:hover {
-  color: #ffb606;
+  color: #eb3337 !important;
 }
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
-  color: #ffb606;
+  color: #eb3337;
 }
 
 .sidenav {
@@ -874,21 +873,30 @@ a:hover, a:active {
 }
 
 .site-title {
-  margin: 10px 0 5px;
-  color: #404040;
+  margin: 25px 0 5px;
+  color: #eb3337;
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+.site-subtitle {
+  margin: 10px 0 5px;
+  color: #eb3337;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1;
+  text-align: right;
+}
+.header-menu{
+	background-color: #ffb606;
+	margin-top: 5px;
 }
 .site-title a {
-  color: #404040;
+	color: #eb3337;
   text-decoration: none;
 }
 .site-title a:hover {
-  color: #404040;
+  color: #eb3337;
 }
 
 .site-branding {
@@ -899,7 +907,7 @@ a:hover, a:active {
   float: left;
 }
 .site-branding .site-logo {
-  max-width: 100px;
+  max-width: 180px;
   margin-right: 15px;
 }
 
@@ -974,7 +982,7 @@ a:hover, a:active {
 }
 
 .header-default {
-  padding: 20px 0 0;
+  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1292,8 +1300,8 @@ h1.entry-title {
   font-size: 13px;
 }
 .site-footer .footer-widgets {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .site-footer .widget-title {
   position: relative;
@@ -2257,4 +2265,8 @@ object {
 .recent-post-carousel .post-item .btn-readmore:hover {
   color: #ffb606;
   border-color: #ffb606;
+}
+.menu-footer-container ul li {
+	width: 50%;
+    float: left;
 }

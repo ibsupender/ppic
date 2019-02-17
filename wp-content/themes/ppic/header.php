@@ -76,33 +76,45 @@
 		<div class="header-default">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-lg-4">
+                    <div class="col-lg-12">
                         <div class="site-branding">
 
                             <div class="site-logo">
 	                            <?php  the_custom_logo(); ?>
                             </div>
+							<div class="site-title">
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<h2 class="site-subtitle">Gadarpur (U.S.Nagar)</h2>
+							</div>
 
                          
 
                         </div><!-- .site-branding -->
                     </div>
 
-                    <div class="col-lg-8 pull-right">
+                    
+                </div>
+            </div>
+        </div>
+		<div class="header-menu">
+		<div class="container">
+		<div class="row">
+				<div class="col-lg-12">
                         <a href="#" id="mobile-open"><i class="fa fa-bars"></i></a>
                         <nav id="site-navigation" class="main-navigation">
 		                    <?php
 		                    wp_nav_menu( array(
 			                    'theme_location' => 'menu-1',
 			                    'menu_id'        => 'primary-menu',
-                                'menu_class'     => 'pull-right'
+                                'menu_class'     => 'pull-left'
 		                    ) );
 		                    ?>
                         </nav><!-- #site-navigation -->
                     </div>
-                </div>
-            </div>
-        </div>
+				</div>
+		
+		</div>
+		</div>
 	</header><!-- #masthead -->
 
     <?php do_action('education_lms_header_titlebar') ; ?>
